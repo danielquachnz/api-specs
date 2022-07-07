@@ -68,7 +68,7 @@ paths:
           - consignments.available_shipping_options
           - promotions.banners
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -778,7 +778,7 @@ paths:
                       page:
                       - string
                       text: string
-        404:
+        '404':
           description: When a given checkout ID is not found.
           content:
             application/json:
@@ -854,7 +854,7 @@ paths:
               $ref: '#/components/schemas/Checkout_Put'
         required: true
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -1049,10 +1049,10 @@ paths:
                     shipping_cost_ex_tax: 8
                     handling_cost_inc_tax: 0
                     handling_cost_ex_tax: 0
-                    coupon_discounts: []
                     discounts: []
                     line_item_ids:
                     - 8edef915-8e8e-4ebd-bece-31fbb1191a7e
+                    coupon_discounts: []
                     selected_shipping_option:
                       id: 006a58a98c9a844225552ee2a9c60ca8
                       type: shipping_byweight
@@ -1633,7 +1633,7 @@ paths:
                             example: manual
         required: false
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -2388,7 +2388,7 @@ paths:
               $ref: '#/components/schemas/AddressProperties'
         required: true
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -3148,7 +3148,7 @@ paths:
               $ref: '#/components/schemas/AddressProperties'
         required: true
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -3916,7 +3916,7 @@ paths:
               $ref: '#/components/schemas/CreateConsignmentRequest'
         required: true
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -4696,7 +4696,7 @@ paths:
               $ref: '#/components/schemas/UpdateConsignmentRequest'
         required: true
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -5446,7 +5446,7 @@ paths:
         schema:
           type: string
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -6195,7 +6195,7 @@ paths:
               $ref: '#/components/schemas/CouponCodeRequest'
         required: true
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -6950,7 +6950,7 @@ paths:
         schema:
           type: string
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -7706,7 +7706,7 @@ paths:
         schema:
           type: string
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -7736,7 +7736,7 @@ paths:
         schema:
           type: string
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
@@ -7781,7 +7781,7 @@ paths:
               $ref: '#/components/schemas/CheckoutsSettingsRequest'
         required: true
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
