@@ -81,11 +81,11 @@ paths:
         - schema:
             type: string
             enum:
-              - export only
-              - email message
-              - theme download
-              - order status
-              - optimized checkout
+              - export+only
+              - email+message
+              - theme+download
+              - order+status
+              - optimized+checkout
           in: query
           name: module
           description: Filter by module
