@@ -71,7 +71,7 @@ paths:
           exclusiveMinimum: false
           type: number
       responses:
-        200:
+        '200':
           description: ""
           content:
             application/json:
