@@ -59,12 +59,11 @@ paths:
               - general
               - payment
               - shipping
-              - tax quotes
+              - tax
               - promotion
               - notification
-              - email integration
+              - emailintegration
               - ebay
-              - shopping comparison
               - ordersettings
               - square
               - facebook
