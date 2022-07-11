@@ -60,16 +60,10 @@ paths:
               - payment
               - shipping
               - tax
-              - promotion
               - notification
               - emailintegration
-              - ebay
               - ordersettings
-              - square
-              - facebook
-              - pinterest
               - design
-              - inventory
           in: query
           name: type
           description: Filter by log type
