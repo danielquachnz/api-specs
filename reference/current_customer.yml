@@ -92,6 +92,7 @@ paths:
           name: app_client_id
           type: string
           required: true
+          description: This is your application's client ID, which is obtained during application registration in the Developer Portal.
       description: |-
         
         <!-- theme: info -->
