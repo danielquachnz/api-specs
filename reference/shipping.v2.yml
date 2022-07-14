@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   version: ""
   title: Shipping V2
-  description: >-
+  description: |-
     Manage shipping zones, shipping methods, and shipping carrier connections.
 
 
@@ -98,8 +98,8 @@ paths:
                             type: integer
                           zip:
                             description: Location’s ZIP/postal code.
-                            example: 12345
-                            type: string
+                            example: 12345 
+                            type: string 
                           country_iso2:
                             description: 2-letter ISO Alpha-2 code for the country.
                             example: US
@@ -1119,7 +1119,7 @@ paths:
         IsMultiContentStreaming: false
       operationId: getShippingMethodsZone
     post:
-      description: >-
+      description: |-
         Creates a *Shipping Method* within a shipping zone. Real Time Carrier
         Connections are also supported by this endpoint. 
 
@@ -1161,27 +1161,27 @@ paths:
 
         | - | - | - |
 
-        | delivery_services | array | PriorityExpress 
- PriorityMailExpressInternational 
- FirstClassPackageInternationalService 
- Priority 
- PriorityMailInternational 
- First 
- ParcelSelect 
- MediaMail |
+        | delivery_services | array | PriorityExpress \n 
+                                      PriorityMailExpressInternational \n
+                                      FirstClassPackageInternationalService \n
+                                      Priority \n
+                                      PriorityMailInternational \n
+                                      First \n
+                                      ParcelSelect \n
+                                      MediaMail |
 
-        | packaging_type | array | FlatRateLegalEnvelope 
- FlatRatePaddedEnvelope 
- Parcel 
- SmallFlatRateBox 
- MediumFlatRateBox 
- LargeFlatRateBox 
- FlatRateEnvelope 
- RegionalRateBoxA 
- RegionalRateBoxB |
+        | packaging_type | array | FlatRateLegalEnvelope \n 
+                                    FlatRatePaddedEnvelope \n 
+                                    Parcel \n 
+                                    SmallFlatRateBox \n 
+                                    MediumFlatRateBox \n 
+                                    LargeFlatRateBox \n 
+                                    FlatRateEnvelope \n 
+                                    RegionalRateBoxA \n 
+                                    RegionalRateBoxB |
 
-        |show_transit_time | boolean | true 
- false |
+        |show_transit_time | boolean | true \n 
+                                       false |
 
 
 
@@ -1224,47 +1224,47 @@ paths:
         | - | - | - |
 
         | delivery_services | array | PRIORITY_OVERNIGHT 
- STANDARD_OVERNIGHT 
- FIRST_OVERNIGHT 
- FEDEX_2_DAY 
- FEDEX_EXPRESS_SAVER 
- INTERNATIONAL_PRIORITY 
- INTERNATIONAL_ECONOMY 
- INTERNATIONAL_FIRST 
- FEDEX_1_DAY_FREIGHT 
- FEDEX_2_DAY_FREIGHT 
- FEDEX_3_DAY_FREIGHT 
- FEDEX_GROUND 
- GROUND_HOME_DELIVERY 
- INTERNATIONAL_PRIORITY_FREIGHT 
- INTERNATIONAL_ECONOMY_FREIGHT 
- EUROPE_FIRST_INTERNATIONAL_PRIORITY |
+                                      STANDARD_OVERNIGHT 
+                                      FIRST_OVERNIGHT  
+                                      FEDEX_2_DAY  
+                                      FEDEX_EXPRESS_SAVER  
+                                      INTERNATIONAL_PRIORITY 
+                                      INTERNATIONAL_ECONOMY 
+                                      INTERNATIONAL_FIRST 
+                                      FEDEX_1_DAY_FREIGHT 
+                                      FEDEX_2_DAY_FREIGHT 
+                                      FEDEX_3_DAY_FREIGHT 
+                                      FEDEX_GROUND 
+                                      GROUND_HOME_DELIVERY 
+                                      INTERNATIONAL_PRIORITY_FREIGHT 
+                                      INTERNATIONAL_ECONOMY_FREIGHT 
+                                      EUROPE_FIRST_INTERNATIONAL_PRIORITY |
 
         | dropoff_type | string | REGULAR_PICKUP 
- REQUEST_COURIER 
- DROP_BOX 
- BUSINESS_SERVICE_CENTER 
- STATION |
+                                  REQUEST_COURIER 
+                                  DROP_BOX 
+                                  BUSINESS_SERVICE_CENTER 
+                                  STATION |
 
         | packaging_type | string | FEDEX_ENVELOPE  
- FEDEX_PAK 
- FEDEX_BOX 
- FEDEX_TUBE 
- FEDEX_10KG_BOX 
- FEDEX_25KG_BOX 
- YOUR_PACKAGING |
+                                    FEDEX_PAK 
+                                    FEDEX_BOX 
+                                    FEDEX_TUBE 
+                                    FEDEX_10KG_BOX 
+                                    FEDEX_25KG_BOX 
+                                    YOUR_PACKAGING |
 
         | packing_method | string | SEPARATE 
- COMBINED |
+                                    COMBINED |
 
         | rate_type | string | NONE 
- LIST |
+                               LIST |
 
         | include_package_value | boolean | true 
- false |
+                                            false |
 
         | destination_type | string | residential 
- business |
+                                      business |
 
 
         ### UPS Ready
@@ -1304,53 +1304,53 @@ paths:
         | - | - | - |
 
         | delivery_services | array | 2nd_Day_Air 
- 2nd_Day_Air_AM 
- 3_Day_Select 
- Expedited  
- Express 
- Express_Plus 
- Express_Saver 
- Express_Early_AM 
- Ground 
- Next_Day_Air  
- Next_Day_Air_Early_AM 
- Next_Day_Air_Saver 
- Saver 
- Standard 
- Today_Dedicated_Courier 
- Today_Express 
- Today_Express_Saver 
- Today_Intercity 
- Today_Standard 
- Worldwide_Expedited 
- Worldwide_Express 
- Worldwide_Express_Plus 
- Worldwide_Express_Saver 
- Worldwide_Saver |
+                                      2nd_Day_Air_AM 
+                                      3_Day_Select 
+                                      Expedited  
+                                      Express 
+                                      Express_Plus 
+                                      Express_Saver 
+                                      Express_Early_AM 
+                                      Ground 
+                                      Next_Day_Air  
+                                      Next_Day_Air_Early_AM 
+                                      Next_Day_Air_Saver 
+                                      Saver 
+                                      Standard 
+                                      Today_Dedicated_Courier 
+                                      Today_Express 
+                                      Today_Express_Saver 
+                                      Today_Intercity 
+                                      Today_Standard 
+                                      Worldwide_Expedited 
+                                      Worldwide_Express 
+                                      Worldwide_Express_Plus 
+                                      Worldwide_Express_Saver 
+                                      Worldwide_Saver |
 
         | destination_type | string | residential 
- business |
+                                      business |
 
         | packing_method | string | separate 
- combined |
+                                    combined |
 
         | packaging_type | string (only codes allowed) | 21: UPS® Express Box 
- 24: UPS® 25 KG Box 
- 25: UPS® 10 KG Box 
- 30: Pallet 
- 01: UPS® Letter 
- 02: Customer Supplied Package 
- 03: Tube 
- 04: PAK 
- 2a: Small Express Box 
- 2b: Medium Express Box 
- 2c: Large Express Box |
+                                                        24: UPS® 25 KG Box 
+                                                        25: UPS® 10 KG Box 
+                                                        30: Pallet 
+                                                        01: UPS® Letter 
+                                                        02: Customer Supplied Package 
+                                                        03: Tube 
+                                                        04: PAK 
+                                                        2a: Small Express Box 
+                                                        2b: Medium Express Box 
+                                                        2c: Large Express Box |
 
         | include_package_value | boolean | true 
- false |
+                                             false |
 
         | show_transit_time | boolean | true 
- false |
+                                        false |
 
 
         ### Canada Post
@@ -1385,27 +1385,27 @@ paths:
         | - | - | - |
 
         | delivery_services | array | DOM.RP 
- DOM.EP 
- DOM.XP 
- DOM.XP.CERT 
- DOM.PC DOM.LIB 
- USA.EP 
- USA.PW.ENV 
- USA.PW.PAK 
- USA.PW.PARCEL 
- USA.SP.AIR 
- USA.TP 
- USA.TP.LVM 
- USA.XP 
- INT.XP 
- INT.IP.AIR 
- INT.IP.SURF 
- INT.PW.ENV 
- INT.PW.PAK 
- INT.PW.PARCEL 
- INT.SP.AIR 
- INT.SP.SURF 
- INT.TP |
+                                      DOM.EP 
+                                      DOM.XP 
+                                      DOM.XP.CERT 
+                                      DOM.PC DOM.LIB 
+                                      USA.EP 
+                                      USA.PW.ENV 
+                                      USA.PW.PAK 
+                                      USA.PW.PARCEL 
+                                      USA.SP.AIR 
+                                      USA.TP 
+                                      USA.TP.LVM 
+                                      USA.XP 
+                                      INT.XP 
+                                      INT.IP.AIR 
+                                      INT.IP.SURF 
+                                      INT.PW.ENV 
+                                      INT.PW.PAK 
+                                      INT.PW.PARCEL 
+                                      INT.SP.AIR 
+                                      INT.SP.SURF 
+                                      INT.TP |
 
 
         ### Australia Post
@@ -1438,25 +1438,25 @@ paths:
         | - | - | - |
 
         | delivery_services | array | AUS_LETTER_REGULAR_SMALL 
- AUS_LETTER_REGULAR_Large 
- AUS_LETTER_EXPRESS_SMALL 
- AUS_LETTER_EXPRESS_MEDIUM 
- AUS_LETTER_EXPRESS_LARGE 
- AUS_PARCEL_REGULAR 
- AUS_PARCEL_REGULAR_SATCHEL_500G 
- AUS_PARCEL_REGULAR_SATCHEL_3KG 
- AUS_PARCEL_REGULAR_SATCHEL_5KG 
- AUS_PARCEL_EXPRESS 
- AUS_PARCEL_EXPRESS_SATCHEL_500G 
- AUS_PARCEL_EXPRESS_SATCHEL_3KG 
- AUS_PARCEL_EXPRESS_SATCHEL_5KG 
- AUS_PARCEL_COURIER 
- AUS_PARCEL_COURIER_SATCHEL_MEDIUM 
- INT_PARCEL_COR_OWN_PACKAGING 
- INT_PARCEL_EXP_OWN_PACKAGING 
- INT_PARCEL_STD_OWN_PACKAGING 
- INT_PARCEL_AIR_OWN_PACKAGING 
- INT_PARCEL_SEA_OWN_PACKAGING |
+                                      AUS_LETTER_REGULAR_Large 
+                                      AUS_LETTER_EXPRESS_SMALL 
+                                      AUS_LETTER_EXPRESS_MEDIUM 
+                                      AUS_LETTER_EXPRESS_LARGE 
+                                      AUS_PARCEL_REGULAR 
+                                      AUS_PARCEL_REGULAR_SATCHEL_500G 
+                                      AUS_PARCEL_REGULAR_SATCHEL_3KG 
+                                      AUS_PARCEL_REGULAR_SATCHEL_5KG 
+                                      AUS_PARCEL_EXPRESS 
+                                      AUS_PARCEL_EXPRESS_SATCHEL_500G 
+                                      AUS_PARCEL_EXPRESS_SATCHEL_3KG 
+                                      AUS_PARCEL_EXPRESS_SATCHEL_5KG 
+                                      AUS_PARCEL_COURIER 
+                                      AUS_PARCEL_COURIER_SATCHEL_MEDIUM 
+                                      INT_PARCEL_COR_OWN_PACKAGING 
+                                      INT_PARCEL_EXP_OWN_PACKAGING 
+                                      INT_PARCEL_STD_OWN_PACKAGING 
+                                      INT_PARCEL_AIR_OWN_PACKAGING 
+                                      INT_PARCEL_SEA_OWN_PACKAGING |
 
 
         ### Royal Mail
@@ -1492,21 +1492,21 @@ paths:
         | - | - | - |
 
         | delivery_services | array | SpecialDelivery1pm 
- SpecialDelivery9am 
- SpecialDelivery1pmSaturday 
- SpecialDelivery9amSaturday 
- SignedForFirstClass 
- SignedForSecondClass 
- Express9 
- Express10 
- ExpressAM 
- Express24 
- Express48 
- StandardFirstClass 
- StandardSecondClass 
- InternationalStandard 
- InternationalTracked 
- InternationalEconomy |
+                                      SpecialDelivery9am 
+                                      SpecialDelivery1pmSaturday 
+                                      SpecialDelivery9amSaturday 
+                                      SignedForFirstClass 
+                                      SignedForSecondClass 
+                                      Express9 
+                                      Express10 
+                                      ExpressAM 
+                                      Express24 
+                                      Express48 
+                                      StandardFirstClass 
+                                      StandardSecondClass 
+                                      InternationalStandard 
+                                      InternationalTracked 
+                                      InternationalEconomy |
 
 
         ### Zoom2U
@@ -1543,8 +1543,8 @@ paths:
         | - | - | - |
 
         | delivery_services | array | 3_hour 
- Same_day 
- VIP|
+                                      Same_day 
+                                      VIP|
 
 
 
@@ -3008,7 +3008,7 @@ x-stoplight:
     includeDownloadLink: true
     showModels: false
 servers:
-  - url: https://api.bigcommerce.com/
+  - url: 'https://api.bigcommerce.com'
 components:
   securitySchemes:
     X-Auth-Token:
@@ -3448,4 +3448,4 @@ components:
                   description: Query string appended to the resource to show the current
                     page.
                   example: ?limit=1&page=2
-      x-internal: false
+      x-internal: false-internal: false
