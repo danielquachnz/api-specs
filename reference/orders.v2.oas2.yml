@@ -1521,7 +1521,7 @@ components:
                   credit_card_type: null
                   order_source: manual
                   channel_id: 1
-                  external_source: POS
+                  ƒrce: POS
                   products:
                     url: 'https://api.bigcommerce.com/stores/{store_hash}/v2/orders/100/products'
                     resource: /orders/100/products
@@ -1538,6 +1538,7 @@ components:
                   store_default_to_transactional_exchange_rate: '1.0000000000'
                   custom_status: Awaiting Fulfillment
                   customer_locale: en
+                  external_order_id: ''
     ordersCount_Resp:
       description: Order Countr response collection.
       content:
@@ -1754,6 +1755,7 @@ components:
                 store_default_to_transactional_exchange_rate: '1.0000000000'
                 custom_status: Awaiting Payment
                 customer_locale: en
+                external_order_id: ''
               Multiple Items:
                 id: 247
                 customer_id: 11
@@ -1845,6 +1847,7 @@ components:
                 store_default_to_transactional_exchange_rate: 1
                 custom_status: Awaiting Fulfillment
                 customer_locale: en
+                external_order_id: ''
     orderCouponsCollection_Resp:
       description: ''
       content:
@@ -2732,6 +2735,7 @@ components:
               external_id: null
               external_merchant_id: null
               custom_status: Awaiting Payment
+              external_order_id: ''
             type: object
             properties:
               id:
@@ -3075,9 +3079,13 @@ components:
                   - AvaTaxProvider
                   - ''
               customer_locale:
-                type: 'string,'
+                type: string
                 example: en
                 description: The customer’s locale.
+              external_order_id:
+                type: string
+                example: 'null'
+                description: The external id of the order
   requestBodies: null
   securitySchemes:
     X-Auth-Token:
@@ -4216,6 +4224,10 @@ components:
           type: string
           example: en
           description: The customer’s locale.
+        external_order_id:
+          type: string
+          example: 'null'
+          description: The external id of the order
         total_ex_tax:
           description: 'Override value for the total, excluding tax. If specified, the field `total_inc_tax` is also required. (Float, Float-As-String, Integer)'
           example: '225.0000'
