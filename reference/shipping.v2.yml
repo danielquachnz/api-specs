@@ -3448,4 +3448,4 @@ components:
                   description: Query string appended to the resource to show the current
                     page.
                   example: ?limit=1&page=2
-      x-internal: false-internal: false
+      x-internal: false
