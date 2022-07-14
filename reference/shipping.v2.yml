@@ -56,7 +56,7 @@ paths:
                     type: zip
                     locations:
                       - id: 3
-                        zip: 12345
+                        zip: '12345'
                         country_iso2: US
                         state_iso2: TX
                     free_shipping:
@@ -64,7 +64,7 @@ paths:
                       minimum_subtotal: 0
                       exclude_fixed_shipping_products: false
                     handling_fees:
-                      fixed_surcharge: 0
+                      fixed_surcharge: '0'
                       percentage_surcharge: ""
                       display_separately: true
                     enabled: true
@@ -98,7 +98,7 @@ paths:
                             type: integer
                           zip:
                             description: Location’s ZIP/postal code.
-                            example: 12345 
+                            example: '12345'
                             type: string 
                           country_iso2:
                             description: 2-letter ISO Alpha-2 code for the country.
@@ -125,7 +125,7 @@ paths:
                       properties:
                         fixed_surcharge:
                           description: ""
-                          example: 0
+                          example: '0'
                           type: string
                         percentage_surcharge:
                           description: ""
@@ -240,7 +240,7 @@ paths:
                 type: zip
                 locations:
                   - id: 3
-                    zip: 12345
+                    zip: '12345'
                     country_iso2: US
                     state_iso2: TX
                 free_shipping:
@@ -248,7 +248,7 @@ paths:
                   minimum_subtotal: 0
                   exclude_fixed_shipping_products: false
                 handling_fees:
-                  fixed_surcharge: 0
+                  fixed_surcharge: '0'
                   percentage_surcharge: ""
                   display_separately: true
                 enabled: true
@@ -282,7 +282,7 @@ paths:
                         type: integer
                       zip:
                         description: Location’s ZIP/postal code.
-                        example: 12345
+                        example: '12345'
                         type: string
                       country_iso2:
                         description: 2-letter ISO Alpha-2 code for the country.
@@ -309,7 +309,7 @@ paths:
                   properties:
                     fixed_surcharge:
                       description: ""
-                      example: 0
+                      example: '0'
                       type: string
                     percentage_surcharge:
                       description: ""
@@ -348,7 +348,7 @@ paths:
                   type: zip
                   locations:
                     - id: 3
-                      zip: 12345
+                      zip: '12345'
                       country_iso2: US
                       state_iso2: TX
                   free_shipping:
@@ -356,7 +356,7 @@ paths:
                     minimum_subtotal: 0
                     exclude_fixed_shipping_products: false
                   handling_fees:
-                    fixed_surcharge: 0
+                    fixed_surcharge: '0'
                     percentage_surcharge: ""
                     display_separately: true
                   enabled: true
@@ -390,7 +390,7 @@ paths:
                           type: integer
                         zip:
                           description: Location’s ZIP/postal code.
-                          example: 12345
+                          example: '12345'
                           type: string
                         country_iso2:
                           description: 2-letter ISO Alpha-2 code for the country.
@@ -417,7 +417,7 @@ paths:
                     properties:
                       fixed_surcharge:
                         description: ""
-                        example: 0
+                        example: '0'
                         type: string
                       percentage_surcharge:
                         description: ""
@@ -526,7 +526,7 @@ paths:
                   type: zip
                   locations:
                     - id: 3
-                      zip: 12345
+                      zip: '12345'
                       country_iso2: US
                       state_iso2: TX
                   free_shipping:
@@ -534,7 +534,7 @@ paths:
                     minimum_subtotal: 0
                     exclude_fixed_shipping_products: false
                   handling_fees:
-                    fixed_surcharge: 0
+                    fixed_surcharge: '0'
                     percentage_surcharge: ""
                     display_separately: true
                   enabled: true
@@ -568,7 +568,7 @@ paths:
                           type: integer
                         zip:
                           description: Location’s ZIP/postal code.
-                          example: 12345
+                          example: '12345'
                           type: string
                         country_iso2:
                           description: 2-letter ISO Alpha-2 code for the country.
@@ -595,7 +595,7 @@ paths:
                     properties:
                       fixed_surcharge:
                         description: ""
-                        example: 0
+                        example: '0'
                         type: string
                       percentage_surcharge:
                         description: ""
@@ -618,7 +618,7 @@ paths:
                     type: zip
                     locations:
                       - id: 3
-                        zip: 12345
+                        zip: '12345'
                         country_iso2: US
                         state_iso2: TX
                     free_shipping:
@@ -626,7 +626,7 @@ paths:
                       minimum_subtotal: 0
                       exclude_fixed_shipping_products: false
                     handling_fees:
-                      fixed_surcharge: 0
+                      fixed_surcharge: '0'
                       percentage_surcharge: ""
                       display_separately: true
                     enabled: true
@@ -687,7 +687,7 @@ paths:
                 type: zip
                 locations:
                   - id: 3
-                    zip: 12345
+                    zip: '12345'
                     country_iso2: US
                     state_iso2: TX
                 free_shipping:
@@ -695,7 +695,7 @@ paths:
                   minimum_subtotal: 0
                   exclude_fixed_shipping_products: false
                 handling_fees:
-                  fixed_surcharge: 0
+                  fixed_surcharge: '0'
                   percentage_surcharge: ""
                   display_separately: true
                 enabled: true
@@ -729,7 +729,7 @@ paths:
                         type: integer
                       zip:
                         description: Location’s ZIP/postal code.
-                        example: 12345
+                        example: '12345'
                         type: string
                       country_iso2:
                         description: 2-letter ISO Alpha-2 code for the country.
@@ -756,7 +756,7 @@ paths:
                   properties:
                     fixed_surcharge:
                       description: ""
-                      example: 0
+                      example: '0'
                       type: string
                     percentage_surcharge:
                       description: ""
@@ -801,7 +801,7 @@ paths:
                   type: zip
                   locations:
                     - id: 3
-                      zip: 12345
+                      zip: '12345'
                       country_iso2: US
                       state_iso2: TX
                   free_shipping:
@@ -809,7 +809,7 @@ paths:
                     minimum_subtotal: 0
                     exclude_fixed_shipping_products: false
                   handling_fees:
-                    fixed_surcharge: 0
+                    fixed_surcharge: '0'
                     percentage_surcharge: ""
                     display_separately: true
                   enabled: true
@@ -843,7 +843,7 @@ paths:
                           type: integer
                         zip:
                           description: Location’s ZIP/postal code.
-                          example: 12345
+                          example: '12345'
                           type: string
                         country_iso2:
                           description: 2-letter ISO Alpha-2 code for the country.
@@ -870,7 +870,7 @@ paths:
                     properties:
                       fixed_surcharge:
                         description: ""
-                        example: 0
+                        example: '0'
                         type: string
                       percentage_surcharge:
                         description: ""
@@ -893,7 +893,7 @@ paths:
                     type: zip
                     locations:
                       - id: 3
-                        zip: 12345
+                        zip: '12345'
                         country_iso2: US
                         state_iso2: TX
                     free_shipping:
@@ -901,7 +901,7 @@ paths:
                       minimum_subtotal: 0
                       exclude_fixed_shipping_products: false
                     handling_fees:
-                      fixed_surcharge: 0
+                      fixed_surcharge: '0'
                       percentage_surcharge: ""
                       display_separately: true
                     enabled: true
@@ -2954,7 +2954,7 @@ components:
         type: zip
         locations:
           - id: 3
-            zip: 12345
+            zip: '12345'
             country_iso2: US
             state_iso2: TX
         free_shipping:
@@ -2962,7 +2962,7 @@ components:
           minimum_subtotal: 0
           exclude_fixed_shipping_products: false
         handling_fees:
-          fixed_surcharge: 0
+          fixed_surcharge: '0'
           percentage_surcharge: ""
           display_separately: true
         enabled: true
@@ -2996,7 +2996,7 @@ components:
                 type: integer
               zip:
                 description: Location’s ZIP/postal code.
-                example: 12345
+                example: '12345'
                 type: string
               country_iso2:
                 description: 2-letter ISO Alpha-2 code for the country.
@@ -3023,7 +3023,7 @@ components:
           properties:
             fixed_surcharge:
               description: ""
-              example: 0
+              example: '0'
               type: string
             percentage_surcharge:
               description: ""
@@ -3049,7 +3049,7 @@ components:
           type: integer
         zip:
           description: Location’s ZIP/postal code.
-          example: 12345
+          example: '12345'
           type: string
         country_iso2:
           description: 2-letter ISO Alpha-2 code for the country.
@@ -3066,7 +3066,7 @@ components:
       properties:
         fixed_surcharge:
           description: ""
-          example: 0
+          example: '0'
           type: string
         percentage_surcharge:
           description: ""
